@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Explained</title>
+</head>
+<body>
+    <h1>Understanding HTML Tables</h1>
+
+    <h2>Introduction</h2>
+    <p>HTML tables are used to display data in a structured format consisting of rows and columns. The main tags used in tables are:</p>
+    <ul>
+        <li><code>&lt;table&gt;</code>: Defines the table.</li>
+        <li><code>&lt;tr&gt;</code>: Defines a row.</li>
+        <li><code>&lt;th&gt;</code>: Defines a header cell.</li>
+        <li><code>&lt;td&gt;</code>: Defines a data cell.</li>
+    </ul>
+
+    <h2>Basic Table Structure</h2>
+    <table border="1">
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+
+    <h2>Table with Header, Body, and Footer</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>$1.00</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$0.50</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>15</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Table with Merged Cells</h2>
+    <p><code>colspan</code> and <code>rowspan</code> are used to merge cells across columns and rows.</p>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact Details</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>+1234567890</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Jane Doe</td>
+            <td>jane@example.com</td>
+            <td>+0987654321</td>
+        </tr>
+        <tr>
+            <td>jane.doe@work.com</td>
+            <td>+1122334455</td>
+        </tr>
+    </table>
+
+    <h2>Summary</h2>
+    <p>Tables in HTML provide a clear way to organize and present data. By combining tags like <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, and merging cells using <code>colspan</code> and <code>rowspan</code>, you can create well-structured tables for various use cases.</p>
+</body>
+</html>

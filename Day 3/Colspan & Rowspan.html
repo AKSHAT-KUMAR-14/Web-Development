@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan and Rowspan in HTML</title>
+</head>
+<body>
+    <h1>Understanding Colspan and Rowspan in HTML Tables</h1>
+
+    <h2>What is Colspan?</h2>
+    <p>The <code>colspan</code> attribute allows a cell to span multiple columns in a table.</p>
+    <table border="1">
+        <tr>
+            <th>Department</th>
+            <th colspan="2">Team Members</th>
+        </tr>
+        <tr>
+            <td>Development</td>
+            <td>John Doe</td>
+            <td>Jane Smith</td>
+        </tr>
+        <tr>
+            <td>Design</td>
+            <td colspan="2">Alice Johnson & Bob Brown</td>
+        </tr>
+    </table>
+
+    <h2>What is Rowspan?</h2>
+    <p>The <code>rowspan</code> attribute allows a cell to span multiple rows in a table.</p>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td>9:00 AM</td>
+            <td>Team Meeting</td>
+        </tr>
+        <tr>
+            <td>11:00 AM</td>
+            <td>Client Call</td>
+        </tr>
+    </table>
+
+    <h2>Combining Colspan and Rowspan</h2>
+    <p>You can also combine both <code>colspan</code> and <code>rowspan</code> in the same table for complex layouts.</p>
+    <table border="1">
+        <tr>
+            <th>Project</th>
+            <th colspan="2">Details</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Website Redesign</td>
+            <td>Phase 1</td>
+            <td>Wireframing</td>
+        </tr>
+        <tr>
+            <td>Phase 2</td>
+            <td>Prototyping</td>
+        </tr>
+    </table>
+</body>
+</html>
